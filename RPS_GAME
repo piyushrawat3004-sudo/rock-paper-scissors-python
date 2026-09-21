@@ -1,0 +1,37 @@
+import random 
+print('welcome to the rock paper scissors game')
+#asking user for its selection
+player=input('enter your choice: rock, paper or scissors? ') 
+#generating computer's choice
+choices=['rock', 'paper', 'scissors']
+computer=random.choice(choices)
+
+print('computer choice is: ', computer)
+#decideing the winner
+
+if player==computer:
+    print('it is a tie')
+
+elif player == 'rock':
+    if computer == 'scissors':
+        print(f'you chose {player} and the computer chose {computer}')
+        print('rock breaks scissors , YOU WINNN :)')
+    else:
+        print(f'you chose {player} and the computer chose {computer}')
+        print('Paper wraps Rock , YOU LOOSE :( computer wins')
+
+elif player == 'paper':
+    if computer == 'scissors':
+        print(f'you chose {player} and the computer chose {computer}')
+        print('Scissors cuts the Paper , YOU LOOSE :(, computer wins')
+    else:
+        print(f'you chose {player} and the computer chose {computer}')
+        print('Paper wraps Rock , YOU WINN :)')
+
+elif player == 'rock':
+    if computer == 'paper':
+        print(f'you chose {player} and the computer chose {computer}')
+        print('Paper wraps Rock , YOU LOOSE :( computer wins')
+    else:
+        print(f'you chose {player} and the computer chose {computer}')
+        print('Rock breaks scissors , YOU WINNN :)')
